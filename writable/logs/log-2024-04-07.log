@@ -1,0 +1,16 @@
+CRITICAL - 2024-04-07 20:09:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Produk.php on line 135.
+ 1 APPPATH\Controllers\Produk.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\Kuliah\\Semester 4\\E Bisnis\\Praktikum\\Kelompok_Beads\\app\\Controllers\\Produk.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Produk->ubah()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Kuliah\\Semester 4\\E Bisnis\\Praktikum\\Kelompok_Beads\\public\\index.php')
+CRITICAL - 2024-04-07 20:10:38 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Produk.php on line 135.
+ 1 APPPATH\Controllers\Produk.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\Kuliah\\Semester 4\\E Bisnis\\Praktikum\\Kelompok_Beads\\app\\Controllers\\Produk.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Produk->ubah()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Kuliah\\Semester 4\\E Bisnis\\Praktikum\\Kelompok_Beads\\public\\index.php')

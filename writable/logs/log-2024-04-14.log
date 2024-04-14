@@ -1,0 +1,66 @@
+ERROR - 2024-04-14 05:58:15 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'beads', 3306, '', 0)
+#1 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\app\Controllers\Produk.php(26): CodeIgniter\Model->__call('get', Array)
+#6 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\CodeIgniter.php(942): App\Controllers\Produk->index()
+#7 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#8 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\Commands\Server\rewrite.php(47): require_once('F:\\Kuliah\\Semes...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\app\Controllers\Produk.php(26): CodeIgniter\Model->__call('get', Array)
+#5 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\CodeIgniter.php(942): App\Controllers\Produk->index()
+#6 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#7 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 F:\Kuliah\Semester 4\E Bisnis\Praktikum\Kelompok_Beads\system\Commands\Server\rewrite.php(47): require_once('F:\\Kuliah\\Semes...')
+#10 {main}
+CRITICAL - 2024-04-14 05:58:15 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `produk`
+WHERE `nama_produk` LIKE :nama_produk: ESCAPE \'!\'', [...], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Produk.php(26): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Produk->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Kuliah\\Semester 4\\E Bisnis\\Praktikum\\Kelompok_Beads\\public\\index.php')
+CRITICAL - 2024-04-14 06:13:24 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Produk.php on line 135.
+ 1 APPPATH\Controllers\Produk.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\Kuliah\\Semester 4\\E Bisnis\\Praktikum\\Kelompok_Beads\\app\\Controllers\\Produk.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Produk->ubah()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Kuliah\\Semester 4\\E Bisnis\\Praktikum\\Kelompok_Beads\\public\\index.php')
+CRITICAL - 2024-04-14 06:30:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Produk.php on line 135.
+ 1 APPPATH\Controllers\Produk.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\Kuliah\\Semester 4\\E Bisnis\\Praktikum\\Kelompok_Beads\\app\\Controllers\\Produk.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Produk->ubah()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Kuliah\\Semester 4\\E Bisnis\\Praktikum\\Kelompok_Beads\\public\\index.php')
+CRITICAL - 2024-04-14 06:30:23 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Produk.php on line 135.
+ 1 APPPATH\Controllers\Produk.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\Kuliah\\Semester 4\\E Bisnis\\Praktikum\\Kelompok_Beads\\app\\Controllers\\Produk.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Produk->ubah()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Kuliah\\Semester 4\\E Bisnis\\Praktikum\\Kelompok_Beads\\public\\index.php')
